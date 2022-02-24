@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?9xwgyl');
+    src:  url('fonts/icomoon.eot?9xwgyl#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?9xwgyl') format('truetype'),
+      url('fonts/icomoon.woff?9xwgyl') format('woff'),
+      url('fonts/icomoon.svg?9xwgyl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    height: 1600px;
+}
+
+/* 导航栏样式开始 */
+
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #fff;
+}
+
+.typeArea {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nav .typeArea .logo {
+    float: left;
+    height: 60%;
+    margin: 16px 15px;
+}
+ 
+.nav .typeArea .loc {
+    float: left;
+    font-size: 16px;
+    line-height: 80px;
+    margin-left: 14px;
+}
+
+.nav .typeArea .loc .location {
+    float: left;
+}
+
+.nav .triangle {
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgb(102, 102, 102);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin: 38px 8px;
+    
+}
+
+.nav ul li {
+    float: left;
+    font-size: 18px;
+}
+
+.nav ul .selected {
+    background-color: #ff2351;
+}
+
+.nav ul .selected a {
+    color: #fff;
+}
+.nav ul .selected a:hover {
+    color: #fff;
+}
+.nav ul li a {
+    display: inline-block;/*转化为行内块，以设置高，从而实现更好的用户体验（鼠标在文字附近即可点击）*/
+    height: 80px;
+    padding:0 16px;
+    line-height: 80px;
+}
+
+.nav ul li a:hover {
+    color: #ff2351;
+}
+.nav .app {
+    float: left;
+    font-family: 'icomoon';
+    font-size: 18px;
+    line-height: 80px;
+    margin-left: 30px;
+    padding: 0 15px;
+    
+}
+
+.nav .app .down {
+    float: left;
+}
+
+/* 搜索框样式 */
+
+.nav .searchBox {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 40px;
+}
+
+.nav .searchBox #search {
+    width: 220px;
+    height: 40px;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+    text-indent: 2em;
+}
+
+.nav .searchBox button {
+    position: absolute;
+    right: -2px;;
+    top: 21px;;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff2351;
+    font-family: 'icomoon';
+    font-size: 20px;
+    color: #fff;
+}
+/* 搜索框样式end*/
+.nav .user {
+    float: left;
+    margin: 0 20px;
+}
+.nav .user img {
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin:20px 0;
+}
+
+/* 网页主体样式开始 */
+.webmain {
+    width: 1200px;
+    margin: 0 auto;
+    color: #ff2351;
+}
+
+
+/* 同时设置左右栏标题效果 */
+.webmain .leftside .hot h2,
+.rightside h2 {
+    display: inline;
+    font-size: 26px;
+    font-weight: 400;
+    
+}
+
+/* 左侧栏样式开始 */
+.webmain .leftside {
+    float: left;
+    width: 740px;
+}
+/* 左侧栏样式结束 */
+
+/* 右侧栏样式开始 */
+.webmain .rightside {
+    float: right;
+    width: 360px;
+}
+/* 右侧栏样式结束 */
+
+/* 热映板块样式开始 */
+.webmain {
+    margin-top: 60px;
+}
+
+.webmain .leftside .hot .subtitle {
+    position: relative;
+    width: 740px;
+    height: 35px;
+}
+
+.webmain .leftside .hot .subtitle a {
+    position: absolute;
+    right: 0;
+    line-height: 35px;
+    color: #ff2351;
+}
+
+.webmain .leftside .hot .movies a {
+    float: left;
+    margin-top: 30px;
+    margin-left: 29px;
+    width: 160px;
+    border: 1px solid #d8d8d8;
+}
+
+.webmain .leftside .hot .movies {
+    margin-top: -10px;
+}
+
+
+.webmain .leftside .hot .movies .first {
+    margin-left: 2px;
+}
+
+.webmain .leftside .hot .movies a div {
+    height: 39px;
+    font-size: 16px;
+    color: #ff2351;
+    line-height: 39px;
+    margin-left: 64px;
+}
+/* 热映板块样式结束 */
+
+/* 今日票房样式开始 */
+.webmain .rightside .todayMoney .top1 {
+    width: 358px;
+    height: 80px;
+    margin-top: 20px;
+    border: 1px solid #d8d8d8;
+}
+
+.webmain .rightside .todayMoney .top1 a {
+    display: block;
+    height: 80px;
+    width: 358px;
+}
+.webmain .rightside .todayMoney .top1 a:hover {
+    background-color: #f7f7f7;
+}
+
+.webmain .rightside .todayMoney .top1 .firstImg {
+    float: left;
+    position: relative;
+}
+
+.webmain .rightside .todayMoney .top1 .firstImg .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.webmain .rightside .todayMoney .top1 .firstInfo {
+    float: left;
+    margin-left: 12px;
+}
+
+.webmain .rightside .todayMoney .top1 .firstInfo h3 {
+    color: #333;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.webmain .rightside .todayMoney .top1 .firstInfo p {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.webmain .rightside .todayMoney ul {
+    margin-top: 10px;
+    margin-bottom: 28px;
+    height: 220px;
+}
+
+.webmain .rightside .todayMoney ul li a {
+    float: left;
+    width: 360px;
+    height: 55px;
+    line-height: 55px;
+}
+
+.webmain .rightside .todayMoney ul li a:hover {
+    background-color: #f7f7f7;
+}
+
+.webmain .rightside .todayMoney ul li  .num,
+ul li h3,
+.money {
+    float: left;
+}
+
+.webmain .rightside .todayMoney ul li .num {
+    width: 25px;
+    font-style: italic;
+    font-size: 18px;
+    color: #999999;
+}
+
+.webmain .rightside .todayMoney ul li .top3 {
+    color: #ff2351;
+}
+
+.webmain .rightside .todayMoney ul li h3 {
+    width: 255px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.webmain .rightside .todayMoney ul li .money {
+    color: #ff2351;
+    width: 80px;
+    text-align: right;
+}
+
+.webmain .rightside .todayMoney .todayBigP {
+    width: 358px;
+    height: 100px;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 40px;
+}
+
+.webmain .rightside .todayMoney .todayBigP .text {
+    float: left;
+    width: 40px;
+    height: 100px;
+    background-color: #ff2351;
+    color: #fff;
+    writing-mode: vertical-lr;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.webmain .rightside .todayMoney .todayBigP .info {
+    float: left;
+    width: 318px;
+    height: 100px;
+    background-color: #fdfdfd;
+}
+
+.webmain .rightside .todayMoney .todayBigP .info .detail {
+    position: relative;
+    height: 50px;
+}
+
+.webmain .rightside .todayMoney .todayBigP .info .detail em {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.webmain .rightside .todayMoney .todayBigP .info .detail p {
+    position: absolute;
+    left: 78px;
+    bottom: 5px;
+}
+
+.webmain .rightside .todayMoney .todayBigP .info .detail a {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: #ff2351;
+}
+
+.webmain .rightside .todayMoney .todayBigP .info .time {
+    font-size: 14px;
+    color: #999999;
+    margin: 10px 15px;
+}
+/* 今日票房样式结束 */
+
+/* 网页底部样式开始 */
+.foot {
+    position: absolute;
+    bottom: 0;
+    background-color: #000b34;
+    width: 100%;
+    height: 360px;
+    color: #d8d8d8;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.foot .text {
+    margin-top: 55px;
+}
+
+.foot .redLink h3,
+a {
+    display: inline-block;
+}
+
+.foot .redLink h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.foot .redLink a {
+    color: #ff2351;
+}
